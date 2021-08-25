@@ -25,8 +25,6 @@ footer .listas{
 
 
 
-
-
 footer .dias{
     position: relative;
     left: -10px;
@@ -46,14 +44,10 @@ footer .contenedor-subs form{
     padding-top: 12px;
 }
 
-footer .contenedor-venta , .contenedor-redes {
-    padding-top: 20px;
-    
-}
 
 
 footer .listas a {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto';
     padding-bottom: 50px;
      
 
@@ -62,7 +56,7 @@ footer .listas a {
 
 
 footer .listas  p{
-    font-family: sans-serif;
+    font-family: 'Roboto';
     padding-bottom: 13px;
     font-size: 12px;
 }
@@ -76,23 +70,6 @@ footer .contenedor-venta .whatsapp i{
 
 
 
-
-footer  .contenedor-redes .instagram i{
-    background: linear-gradient(#8a3ab9,#e95950,#bc2a8d,#f69d3c,  #fbad50,#cd486b,#4c68d7);
-    border-radius: 10px;
-    margin-bottom: 15px;
-    font-size: 26px;
-}
-
-footer  .contenedor-redes .facebook i{
-    background-color: #3b5998;
-    border-radius: 5px;
-    width: 22px;
-    height: 26px;
-    font-size: 26px;
-    
-}
-
 footer .contenedor-subs{
     position: relative;
     bottom: 8px;
@@ -100,7 +77,7 @@ footer .contenedor-subs{
 }
 
 footer .contenedor-subs label{
-    font-family: 'Kanit';
+    font-family: 'Roboto';
     font-size: 20px;
     position: relative;
     top: -5px;
@@ -110,49 +87,62 @@ footer .contenedor-subs label{
 
 footer .contenedor-subs p{
     padding-top: 10px;
-    font-family: 'Kanit';
+    font-family: 'Roboto';
 
 }
 
 
 footer .contenedor-subs button{
-    width: 150px;
-    height: 30px;
-    font-size: 10px;
-    font-family: 'Kanit';
-    background-color: white;
-    border: none;
-    border-radius: 3px;
+    
     cursor: pointer;
  
 
 }
 
-
-footer .contenedor-subs input{
-    width: 300px;
-    height: 40px;
-    margin-bottom: 15px;
-   font-size: 13px;
- 
+footer hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: 20px auto;
 }
-    
+
+
 
 
 footer  .copyright{
-    
-        padding-top: 60px;
         padding-bottom: 15px;
         font-size: 10px;
         color: white;
         text-align: center;
-        font-style: italic;
         font-family: 'Roboto';       
 }
 
+footer .social-icons .fab{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    background: white;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+footer .listas  p{
+    font-family: 'Roboto';
+font-size: 12px;
+left: 1px;
+width: fit-content;
+position: relative;
+}
+
+
 @media (max-width: 426px){
 
-footer .contenedor-navegacion, .contenedor-subs{
+footer  .contenedor-subs form , .contenedor-subs p {
     display: none;
     
 }
@@ -170,37 +160,126 @@ footer .contenedor-venta a{
     font-size: 18px;
 
 }
+footer .underline{
+    width: 80px;
+height: 5px;
+background: #767676;
+border-radius: 3px;
+position: absolute;
+margin-top: 25px;
+margin-right: 10px;
+overflow: hidden;
+    
+}
+
 
 }
 
+/* Tablet*/
 
 
 @media (min-width: 426px){
 
-    footer .listas {
+    footer .venta-nav {
         padding-top: 30px;
         color: white;
-        text-align: center;
+        text-align: center; 
+        display: flex;
         
     }
 
     footer .listas  p{
-        font-family: sans-serif;
+        font-family: 'Roboto';
         padding-bottom: 13px;
-        font-size: 16px;
+        font-size: 13px;
     }
+
+    
+
+    footer .social-icons .fab{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        background: white;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    
+
+    
     
 }
 
+@media (max-width: 767px) {
+    footer .contenedor-subs form , .contenedor-subs p {
+        display: none;
+    }
+
+    footer .contenedor-navegacion{
+        display: none;
+    }
+    
+
+
+    footer .contenedor-subs .underline{
+        display: none;
+    }
+
+    footer .underline{
+        width: 100px;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    margin-top: 25px;
+    margin-right: 10px;
+    overflow: hidden;
+        
+    }
+    
+    footer .underline span{
+        width: 15px;
+        height: 100%;
+        background: #fff;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        animation: moving 2s linear infinite;
+    }
+    
+    @keyframes moving {
+        0%{
+            left: -20px;
+        }
+        100%{
+            left: 100%;
+        }
+        
+    }
+
+    footer  .contenedor-venta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px
+    }
+
+   
+}
+
+
+/* desktop*/
 
 
     
     @media (min-width: 768px){
        
-       footer .contenedor-subs{
-           display: contents;
-       }
-    
+       
         footer .listas{   
         display: flex;
        text-align: justify;
@@ -208,34 +287,100 @@ footer .contenedor-venta a{
        
         }
     
-        footer .contenedor-subs label {
-            font-family: 'Kanit';
-            font-size: 16px;
-            left: 100px;
+        footer .contenedor-subs form{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: solid 1px white;
+            margin-bottom: 50px;
+            padding-bottom: 15px;
         }
-    
-footer .contenedor-subs .subscrib{
-            padding-left: 60px;
- }
-    
-    
-footer .contenedor-subs button{
-position: relative;
-        left: 75px;
+        
+
+        footer .contenedor-subs form .far{
+        font-size: 18px;
+        margin-right: 10px;
         }
 
+        footer .contenedor-subs form input{
+            background: transparent;
+            color: white;
+            border: 0;
+            outline: none;
+
+        }
+
+
+        footer .contenedor-subs form button{
+            background: transparent;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+        }
+
+
+        footer .contenedor-subs form button .fas{
+            font-size: 16px;
+            color: white;
+        }
+
+        footer .social-icons .fab{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            line-height: 40px;
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            background: white;
+            margin-right: 15px;
+            cursor: pointer;
+        }
     
- footer .contenedor-navegacion{
-     margin-top: 20px;
-     }
+
+    
 
         footer .listas  p{
-            font-family: sans-serif;
-            padding-bottom: 13px;
-            font-size: 12px;
-            position: relative;
-            left: -5px;
-        }
+            font-family: 'Roboto';
+        font-size: 12px;
+        left: 1px;
+        width: fit-content;
+    position: relative;
+        
+}
+
+footer .underline{
+    width: 80px;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+}
+
+footer .underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+    
+}
+        
 }
 
 
